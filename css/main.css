@@ -99,7 +99,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* Light green: #527158 */
+/* Darker Green #2a423a */
+/* ALmost Black Green: #202322  */
+/* Grey Font color: #e2e3ed */
 /* General Styles */
+
 html {
   font-size: 16px;
 }
@@ -134,7 +140,7 @@ a {
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 h2 {
@@ -149,7 +155,7 @@ h4 {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 img {}
@@ -212,13 +218,64 @@ footer {
 }
 
 
-/* --------General Styles------- */
+/* --------Form Styles------- */
+
+form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
+/* ---General Background color and images--- */
+
+/* Light grey */
+nav,
+footer {
+  background-color: #202322;
+  color: #e2e3ed;
+  /* Light grey */
+}
+
+section#reviews,
+section#contact-us {
+  background-color: #2a423a;
+  color: #e2e3ed;
+}
 
 
+/* Light green: #527158 */
+section#download-form,
+section#mission,
+section#faq-questions {
+  background-color: #527158;
+  color: #e2e3ed;
+}
 
-
+section#features,
+h1 {
+  color: #e2e3ed;
+}
 
 /* ------------Footer Styles--------- */
 
@@ -320,6 +377,10 @@ footer {
 @media only screen and (min-width: 768px) {
 
   /* Style adjustments for tablet */
+  html {
+    font-size: 18px;
+  }
+
   .section-content {
     width: 80%;
     max-width: 1200px;
@@ -330,6 +391,7 @@ footer {
     align-items: center;
     flex-direction: column;
   }
+
 
 
 
@@ -349,7 +411,11 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+
   /* Style adjustments for desktop */
+  html {
+    font-size: 26px;
+  }
 
   .section-content {
     width: 70%;
