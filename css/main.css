@@ -99,6 +99,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+/* ------------General Layout Styles--------- */
+
+header,
+footer,
+section,
+#download-form,
+.features-item,
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 3px solid yellow; */
+}
+
+
+
+
+
+
+
+
+/* ------------Footer Styles--------- */
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
