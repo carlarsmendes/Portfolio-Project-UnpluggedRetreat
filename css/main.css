@@ -131,8 +131,8 @@ main {
 ul,
 ol {
   list-style-type: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -163,17 +163,35 @@ p {
 }
 
 img {
-  width:100%;
+  width: 100%;
 }
 
 figure {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 address {}
 
 .section-content {}
+
+.map figure {
+
+  width: 100%;
+  height: 0;
+  /* This sets the relationship between the height and width of the map - We want t maintain an aspect ratio without the fixed widths*/
+  padding-bottom: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -193,45 +211,45 @@ section,
   width: 100%;
 }
 
-nav{
-  width:100%;
-  border:3px solid orange;
-  display:flex;
+nav {
+  width: 100%;
+  border: 3px solid orange;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-nav ul{
-  display:flex;
+nav ul {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   /* border:3px solid green; */
-  width:100%;
-  margin:auto;
+  width: 100%;
+  margin: auto;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-nav a{
-  max-width:500px;
-  min-width:350px;
+nav a {
+  max-width: 500px;
+  min-width: 350px;
   text-align: center;
   height: 60px;
-  border:3px solid red;
-  display:flex;
+  border: 3px solid red;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-nav ul li{
-  width:200px;
+nav ul li {
+  width: 200px;
   /* border:3px solid red; */
   text-align: center;
   height: 60px;
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
@@ -244,7 +262,7 @@ section#hero-section {
 }
 
 section#hero-section h1 {
-  padding-top:4em;
+  padding-top: 4em;
   text-align: left;
 }
 
@@ -312,7 +330,8 @@ input[type=button] {
 /* ---General Background color and images--- */
 
 /* Light grey font*/
-header,nav,
+header,
+nav,
 footer {
   background-color: #202322;
   color: #e2e3ed;
@@ -455,8 +474,8 @@ h1 {
   }
 
 
-  nav{
-    width:100%;
+  nav {
+    width: 100%;
     /* border:3px solid orange;
     display:flex; */
     /* text-align: center; */
@@ -466,33 +485,34 @@ h1 {
     /* justify-items: center; */
   }
 
-  nav ul li, nav a {
-    width:200px;
+  nav ul li,
+  nav a {
+    width: 200px;
   }
 
 
-  ul.section-content{
-    width:auto;
+  ul.section-content {
+    width: auto;
     flex-direction: row;
   }
 
   section#hero-section {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border:3px solid purple;
+    border: 3px solid purple;
   }
 
   section#hero-section .section-content {
-    padding:0;
+    padding: 0;
     margin-top: 0;
     text-align: left;
   }
 
   section#hero-section h1 {
     padding: 2.5em 0 0;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: left;
   }
 
@@ -515,20 +535,22 @@ h1 {
 @media only screen and (min-width: 1200px) {
 
   /* Style adjustments for desktop */
-  html,body,main {
+  html,
+  body,
+  main {
     font-size: 26px;
-    width:100vw;
+    width: 100vw;
   }
 
   header,
-footer,
-section,
-#download-form,
-/* .features-item, */
-.footer-section {
-  border: 3px solid yellow;
-  width: 100%;
-}
+  footer,
+  section,
+  #download-form,
+  /* .features-item, */
+  .footer-section {
+    border: 3px solid yellow;
+    width: 100%;
+  }
 
   .section-content {
     width: 70%;
