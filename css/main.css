@@ -167,7 +167,8 @@ img {
 }
 
 figure {
-
+  margin: 0;
+  padding:0;
 }
 
 address {}
@@ -190,8 +191,6 @@ section,
   flex-direction: column;
   border: 3px solid yellow;
   width: 100%;
-  
-  /* max-width: 1200px; */
 }
 
 nav{
@@ -456,6 +455,46 @@ h1 {
   }
 
 
+  nav{
+    width:100%;
+    /* border:3px solid orange;
+    display:flex; */
+    /* text-align: center; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* justify-items: center; */
+  }
+
+  nav ul li, nav a {
+    width:200px;
+  }
+
+
+  ul.section-content{
+    width:auto;
+    flex-direction: row;
+  }
+
+  section#hero-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border:3px solid purple;
+  }
+
+  section#hero-section .section-content {
+    padding:0;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  section#hero-section h1 {
+    padding: 2.5em 0 0;
+    margin:0 auto;
+    text-align: left;
+  }
 
 
   #features .features-item {
@@ -476,14 +515,30 @@ h1 {
 @media only screen and (min-width: 1200px) {
 
   /* Style adjustments for desktop */
-  html {
+  html,body,main {
     font-size: 26px;
+    width:100vw;
   }
+
+  header,
+footer,
+section,
+#download-form,
+/* .features-item, */
+.footer-section {
+  border: 3px solid yellow;
+  width: 100%;
+}
 
   .section-content {
     width: 70%;
     max-width: 1200px;
     border: 3px solid orange;
+  }
+
+  section#hero-section h1 {
+    padding: 1.7em 0 0;
+
   }
 
 
