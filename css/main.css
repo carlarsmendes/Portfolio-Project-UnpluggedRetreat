@@ -114,12 +114,16 @@ body {
   font-size: 1em;
 }
 
+/* body i {
+  font-family: 'FontAwesome' !important; */
+/* } */
+
 html,
 body,
 main {
   margin: 0;
   padding: 0;
-  max-width: 99%;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +148,6 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 3em;
   font-weight: normal;
-
 }
 
 h2 {
@@ -156,6 +159,8 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
+  font-weight: normal;
+  /* padding: 1em 0; */
 }
 
 p {
@@ -171,9 +176,10 @@ figure {
   padding: 0;
 }
 
-address {}
 
-.section-content {}
+.section-content {
+  padding: 1.5em 0;
+}
 
 .map figure {
   width: 100%;
@@ -219,6 +225,10 @@ nav {
   align-items: center;
 }
 
+nav .section-content {
+  padding: 0;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -234,7 +244,7 @@ nav ul {
 
 nav a {
   max-width: 500px;
-  min-width: 350px;
+  /* min-width: 350px; */
   text-align: center;
   height: 60px;
   border: 3px solid red;
@@ -280,6 +290,20 @@ section#features {
   min-height: 200px;
   width: 100%;
   border: 3px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#features .features-item i {
+  font-size: 4em;
+}
+
+#features .features-item p {
+  font-size: 1.1em;
+  width: 70%;
 }
 
 section#reviews {
@@ -296,8 +320,24 @@ footer {
   width: 100%;
 }
 
+.footer-section {
+  padding: 2em 0;
+}
+
 .section-content {
-  width: 95%;
+  width: 100%;
+}
+
+footer .section-content p {
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  border: 3px solid red;
+  width: 100%;
+}
+
+footer .section-content {
+  padding: 0;
 }
 
 
@@ -361,9 +401,20 @@ h1 {
   color: #e2e3ed;
 }
 
-/* ------------Footer Styles--------- */
+/* ------------Social Icons Styles--------- */
 
-
+i.social-icon {
+  color: #e2e3ed;
+  background-color: #527158;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0 10px;
+}
 
 
 
@@ -594,11 +645,22 @@ h1 {
 
   }
 
+  /* #features h1,
+  #features .features-item {
+    padding: 3.5em 0;
+  } */
+
   section.map,
   figure.section-content,
   iframe {
     width: 100%;
     max-width: none;
+  }
+
+  i.social-icon {
+    padding: 20px;
+    font-size: 1.6em;
+    margin: 0 20px;
   }
 
 
