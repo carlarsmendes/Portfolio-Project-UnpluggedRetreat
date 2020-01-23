@@ -846,8 +846,9 @@ i.social-icon {
     margin: 0 20px;
   }
 
+  section#hero-section,
   .parallax {
-    height: 900px;
+    min-height: 900px;
   }
 
 
